@@ -28,8 +28,15 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="277dp">
+        android:layout_height="277dp"
+        android:weightSum="1">
 
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:id="@+id/tv0"
+            android:layout_weight="1.06" />
     </LinearLayout>
 
     <LinearLayout
