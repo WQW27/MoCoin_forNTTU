@@ -7,6 +7,17 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:layout_height="129dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="111dp">
 
         <TextView
@@ -21,16 +32,6 @@
         android:layout_width="match_parent"
         android:layout_height="117dp">
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-        </ListView>
-
     </LinearLayout>
 
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button" />
 </LinearLayout>

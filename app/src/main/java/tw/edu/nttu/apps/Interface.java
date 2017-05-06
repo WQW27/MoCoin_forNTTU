@@ -70,7 +70,4 @@ public class Interface extends AppCompatActivity {
             return null;
         }
     }
-
-    private class N {
-    }
 }
