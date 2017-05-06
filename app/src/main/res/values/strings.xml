@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">APPS</string>
 
-    <!--分類項目-->
+    <!--支出 分類項目-->
     <string name="food">伙食</string>
     <string name="Supply">用品</string>
     <string name="water">水</string>
@@ -11,4 +11,11 @@
     <string name="traffic">交通</string>
     <string name="necessary">必要花費</string>
     <string name="extra">額外花費</string>
+
+    <!--收入 分類項目-->
+    <string name="living_expenses">生活費</string>
+    <string name="pocket_money">零用錢</string>
+    <string name="Repayment">還款</string>
+    <string name="Salary">薪資</string>
+    <string name="investment">投資</string>
 </resources>
