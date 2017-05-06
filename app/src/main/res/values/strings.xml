@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">APPS</string>
+    <string name="app_name">MoCoin</string>
+
+    <!--used in income and outlay-->
+    <!--計算機使用-->
+    <string name="num_1_st">1</string>
+    <string name="num_2_st">2</string>
+    <string name="num_3_st">3</string>
+    <string name="num_4_st">4</string>
+    <string name="num_5_st">5</string>
+    <string name="num_6_st">6</string>
+    <string name="num_7_st">7</string>
+    <string name="num_8_st">8</string>
+    <string name="num_9_st">9</string>
+    <string name="num_0_st">0</string>
+    <string name="dot_st">.</string>
+    <string name="plus_st">+</string>
+    <string name="minus_st">-</string>
+    <string name="times_st">×</string>
+    <string name="diviede_st">÷</string>
+    <string name="equals_st">=</string>
+    <string name="write_st">計入</string>
+    <string name="clear_st">清除</string>
+    <!--文字-->
+    <string name="inputmoney_st">輸入金額</string>
+
 </resources>
