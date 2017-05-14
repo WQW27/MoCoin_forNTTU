@@ -144,7 +144,7 @@
                 android:text="@string/equals_st" />
 
             <Button
-                android:id="@+id/divied-bte"
+                android:id="@+id/divied_bt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/diviede_st" />

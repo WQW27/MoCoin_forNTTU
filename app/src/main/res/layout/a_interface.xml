@@ -80,17 +80,17 @@
         android:layout_height="match_parent">
 
         <Button
-            android:text="+"
+            android:id="@+id/to_income_bt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bt2"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="+" />
 
         <Button
-            android:text="-"
+            android:id="@+id/to_outlay_bt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bt1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="-" />
     </LinearLayout>
 </LinearLayout>
