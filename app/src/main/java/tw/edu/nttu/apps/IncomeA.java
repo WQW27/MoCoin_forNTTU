@@ -41,8 +41,7 @@ public class IncomeA extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             TextView lv02= (TextView) view;
-            tv06.setText(lv02.getText().toString() + ", " +
-                    i + ", " + l);
+            tv06.setText(lv02.getText().toString());
             Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_LONG).show();
         }
     };
