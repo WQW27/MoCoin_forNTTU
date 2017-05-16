@@ -2,20 +2,22 @@
     <string name="app_name">APPS</string>
 
     <!--支出 分類項目-->
-    <string name="food">伙食</string>
-    <string name="Supply">用品</string>
-    <string name="water">水</string>
-    <string name="electricity">電</string>
+    <string name="food">餐飲</string>
+    <string name="Supply">生活用品</string>
+    <string name="water">水費</string>
+    <string name="electricity">電費</string>
     <string name="rent">房租</string>
-    <string name="communication">通訊</string>
-    <string name="traffic">交通</string>
-    <string name="necessary">必要花費</string>
-    <string name="extra">額外花費</string>
+    <string name="communication">通訊費</string>
+    <string name="traffic">交通費</string>
+    <string name="entertainment">娛樂</string>
+    <string name="social">社交費</string>
+    <string name="others_expenditure">其他支出</string>
 
     <!--收入 分類項目-->
     <string name="living_expenses">生活費</string>
     <string name="pocket_money">零用錢</string>
-    <string name="Repayment">還款</string>
+    <string name="Repayment">預收帳款</string>
     <string name="Salary">薪資</string>
-    <string name="investment">投資</string>
+    <string name="investment">投資報酬</string>
+    <string name="others_income">其他收入</string>
 </resources>
