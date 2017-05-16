@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="129dp">
+        android:layout_height="129dp"
+        android:layout_weight="0.46"
+        android:background="@color/dark_grey"
+        tools:context=".IncomeA">
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="131dp"
+            android:id="@+id/lv01"
+            tools:listitem="@layout/income_row">
         </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv06" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="111dp">
+        android:layout_height="26dp"
+        android:layout_weight="0.09">
 
         <TextView
             android:text="輸入金額"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="53dp"
             android:id="@+id/tv201" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="117dp">
+        android:layout_height="117dp"
+        android:layout_weight="0.38">
 
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv04"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>
