@@ -10,20 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="129dp"
         android:layout_weight="0.46"
-        android:background="@color/dark_grey"
-        tools:context=".IncomeA">
+        tools:context=".IncomeA"
+        android:weightSum="1">
 
         <ListView
             android:layout_width="match_parent"
             android:layout_height="131dp"
             android:id="@+id/lv01"
-            tools:listitem="@layout/income_row">
+            android:layout_weight="0.42">
         </ListView>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/tv06" />
+            android:layout_height="wrap_content"
+            android:id="@+id/tv06"
+            android:layout_weight="0.60"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

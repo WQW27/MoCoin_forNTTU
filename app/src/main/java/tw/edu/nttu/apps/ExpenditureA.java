@@ -10,30 +10,30 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class IncomeA extends AppCompatActivity {
-    ListView lv01;
-    TextView tv06;
+public class ExpenditureA extends AppCompatActivity {
+    ListView lv03;
+    TextView tv05;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.a_income);
+        setContentView(R.layout.a_expenditure);
         setupView();
     }
 
     private void setupView() {
-        lv01 =(ListView)findViewById(R.id.lv01);
-        tv06 =(TextView)findViewById(R.id.tv06);
+        lv03 =(ListView)findViewById(R.id.lv03);
+        tv05 =(TextView)findViewById(R.id.tv05);
 //The arrayAdatper is the controller in our
 //model-view-controller relationship. (controller)
-        String[] str01 = new String[]{"生活費", "零用錢", "預收帳款", "薪資", "投資報酬", "其他收入"};
+        String[] str01 = new String[]{"餐飲", "生活用品", "水費", "電費", "房租", "通訊費","交通費","娛樂","社交費","其他支出"};
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_spinner_item,
                 str01
         );
 
-        lv01.setAdapter(arrayAdapter);
-        lv01.setOnItemClickListener(lv01Click);
+        lv03.setAdapter(arrayAdapter);
+        lv03.setOnItemClickListener(lv01Click);
     }
 
     AdapterView.OnItemClickListener lv01Click = new AdapterView.OnItemClickListener(){
@@ -41,10 +41,14 @@ public class IncomeA extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             TextView lv02= (TextView) view;
-            tv06.setText(lv02.getText().toString());
+            tv05.setText(lv02.getText().toString());
             Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_LONG).show();
         }
     };
 
     //Remainder of the class listing omitted for brevity
 }
+
+
+
+

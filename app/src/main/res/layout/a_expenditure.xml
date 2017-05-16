@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="99dp">
+        android:layout_height="99dp"
+        android:layout_weight="0.49">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:id="@+id/lv03"
+            android:layout_weight="0.73" />
 
         <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
+            android:text="支出項目"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv05"
-            android:layout_weight="1" />
+            android:layout_weight="0.25"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
