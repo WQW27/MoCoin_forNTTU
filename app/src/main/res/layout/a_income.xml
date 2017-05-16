@@ -132,10 +132,10 @@
                 android:text="@string/num_0_st" />
 
             <Button
-                android:id="@+id/dot_bt"
+                android:id="@+id/back_bt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/dot_st" />
+                android:text="@string/back_st" />
 
             <Button
                 android:id="@+id/equals_bt"
