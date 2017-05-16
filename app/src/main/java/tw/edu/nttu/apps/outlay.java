@@ -1,24 +1,13 @@
 package tw.edu.nttu.apps;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
-
 public class outlay extends AppCompatActivity {
 
-    private Button plus_bt;     //按鈕加
-    private Button minus_bt;    //按鈕減
-    private Button times_bt;    //按鈕乘
-    private Button divied_bt;   //按鈕除
-    private Button equals_bt;   //等於
-    private Button write_bt;    //計入
-    private Button clear_bt;    //清除內容
-    private Button back_bt;     //倒退
     private TextView inputmoney_tx; //金額
     private boolean firstinput = true;  //判定是否第一次輸入
     private boolean contiOperate = false; //判定是否為連續加減乘除
@@ -45,14 +34,14 @@ public class outlay extends AppCompatActivity {
         Button num_8_bt=(Button) findViewById(R.id.num_8_bt);
         Button num_9_bt=(Button) findViewById(R.id.num_9_bt);
         Button num_0_bt=(Button) findViewById(R.id.num_0_bt);
-        plus_bt=(Button) findViewById(R.id.plus_bt);
-        minus_bt=(Button) findViewById(R.id.minus_bt);
-        times_bt=(Button) findViewById(R.id.times_bt);
-        divied_bt=(Button) findViewById(R.id.divied_bt);
-        back_bt=(Button) findViewById(R.id.back_bt);
-        equals_bt=(Button) findViewById(R.id.equals_bt);
-        write_bt=(Button) findViewById(R.id.write_bt);
-        clear_bt=(Button) findViewById(R.id.clear_bt);
+        Button plus_bt = (Button) findViewById(R.id.plus_bt);
+        Button minus_bt = (Button) findViewById(R.id.minus_bt);
+        Button times_bt = (Button) findViewById(R.id.times_bt);
+        Button divied_bt = (Button) findViewById(R.id.divied_bt);
+        Button back_bt = (Button) findViewById(R.id.back_bt);
+        Button equals_bt = (Button) findViewById(R.id.equals_bt);
+        Button clear_bt = (Button) findViewById(R.id.clear_bt);
+        Button write_bt = (Button) findViewById(R.id.write_bt);
 
         inputmoney_tx=(TextView) findViewById(R.id.inputmoney_tx);
 
