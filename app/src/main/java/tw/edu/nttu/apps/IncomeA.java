@@ -11,14 +11,18 @@ import android.widget.Toast;
 
 
 public class IncomeA extends AppCompatActivity {
-    ListView mListView;
+    ListView lv01;
     TextView tv06;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_income);
-        mListView = (ListView) findViewById(R.id.lv01);
-        tv06      =(TextView)findViewById(R.id.tv06);
+        setupView();
+    }
+
+    private void setupView() {
+        lv01 =(ListView)findViewById(R.id.lv01);
+        tv06 =(TextView)findViewById(R.id.tv06);
 //The arrayAdatper is the controller in our
 //model-view-controller relationship. (controller)
         String[] str01 = new String[]{"生活費", "零用錢", "預收帳款", "薪資", "投資報酬", "其他收入"};
@@ -28,11 +32,11 @@ public class IncomeA extends AppCompatActivity {
                 str01
         );
 
-        mListView.setAdapter(arrayAdapter);
-//        mListView.setOnClickListener(mListViewClick);
+        lv01.setAdapter(arrayAdapter);
+        lv01.setOnItemClickListener(lv01Click);
     }
 
-    AdapterView.OnItemClickListener mListViewClick = new AdapterView.OnItemClickListener(){
+    AdapterView.OnItemClickListener lv01Click = new AdapterView.OnItemClickListener(){
 
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
