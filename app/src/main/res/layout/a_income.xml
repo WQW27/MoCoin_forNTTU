@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="129dp"
-        android:layout_weight="0.46"
+        android:layout_weight="0.34"
         tools:context=".IncomeA"
         android:weightSum="1">
 
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="131dp"
             android:id="@+id/lv01"
-            android:layout_weight="0.42">
+            android:layout_weight="0.04">
         </ListView>
 
         <TextView
@@ -30,28 +30,50 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="26dp"
-        android:layout_weight="0.09">
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32">
+
+        <Button
+            android:text="選擇日期"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt04"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="選擇哪餐"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt05"
+            android:layout_weight="1" />
 
         <TextView
-            android:text="輸入金額"
+            android:text="TextView"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:id="@+id/tv201" />
+            android:layout_height="wrap_content"
+            android:id="@+id/tv07"
+            android:layout_weight="5.89" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="117dp"
         android:layout_weight="0.38">
 
         <TextView
+            android:text="輸入金額"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/tv201" />
+
+        <TextView
             android:text=""
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/tv04"
             android:layout_weight="1" />
     </LinearLayout>
