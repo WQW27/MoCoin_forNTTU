@@ -17,7 +17,7 @@ import java.util.Calendar;
 
 public class TestA extends AppCompatActivity {
     Button bt07, bt08;
-
+//2
     String s1 = "";
     String s2 = "";
 
