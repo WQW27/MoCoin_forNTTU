@@ -8,7 +8,6 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.TextView;
 import android.view.View;
 import android.widget.TimePicker;
 
@@ -18,8 +17,7 @@ import java.util.Calendar;
 
 public class TestA extends AppCompatActivity {
     Button bt07, bt08;
-    TextView tv01;
-    
+
     String s1 = "";
     String s2 = "";
 
@@ -33,7 +31,7 @@ public class TestA extends AppCompatActivity {
     private void setupView() {
         bt07 = (Button) findViewById(R.id.bt07);
         bt08 = (Button) findViewById(R.id.bt08);
-        tv01 = (TextView) findViewById(R.id.tv01);
+
         bt07.setOnClickListener(bt07Click);
         bt08.setOnClickListener(bt08Click);
     }
