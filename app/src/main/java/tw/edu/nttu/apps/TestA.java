@@ -19,8 +19,7 @@ import java.util.Calendar;
 public class TestA extends AppCompatActivity {
     Button bt07, bt08;
     TextView tv01;
-
-    String s0 = "您所選擇的日期是 ";
+    
     String s1 = "";
     String s2 = "";
 
@@ -81,7 +80,7 @@ public class TestA extends AppCompatActivity {
         public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
             s1 = year + "年" +
                     (month) + "月" + dayOfMonth + "日";
-            tv01.setText(s0 + s1 + s2);
+            bt07.setText(s1);
             bt08Click.onClick(view);
         }
     };
@@ -89,7 +88,7 @@ public class TestA extends AppCompatActivity {
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                 s2=hourOfDay+"點"+minute+"分";
-                tv01.setText(s0+s1+s2);
+                bt08.setText(s2);
             }
     };
 }
