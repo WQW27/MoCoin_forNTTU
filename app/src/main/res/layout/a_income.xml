@@ -13,6 +13,13 @@
         tools:context=".IncomeA"
         android:weightSum="1">
 
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="0.04" />
+
         <ListView
             android:layout_width="match_parent"
             android:layout_height="131dp"
@@ -43,18 +50,11 @@
             android:layout_weight="1" />
 
         <Button
-            android:text="選擇哪餐"
+            android:text="選擇時間"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bt05"
             android:layout_weight="1" />
-
-        <TextView
-            android:text="TextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv07"
-            android:layout_weight="5.89" />
 
     </LinearLayout>
 
