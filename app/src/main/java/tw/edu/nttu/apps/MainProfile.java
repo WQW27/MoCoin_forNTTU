@@ -1,12 +1,16 @@
 package tw.edu.nttu.apps;
 
+import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -42,7 +46,54 @@ public class MainProfile extends AppCompatActivity {
 
         dbHelper01=new myDbHelper(this,databaseTable,null,1);
         db01=dbHelper01.getWritableDatabase();
+
+        bt0.setOnClickListener(bt0Click);
+
+        showTables();
     }
+
+    private void showTables(){
+        // TODO Auto-generated method stub
+        String[] colNames=new String[]{"_id","tnote"};
+        String s01="";
+        Cursor c01=db01.query(databaseTable,colNames,null,null,null,null,null);
+
+        for (int i=0;i<colNames.length;i++){
+            s01=s01+colNames[i]+"\t";
+        }
+        s01=s01+"\n";
+
+        c01.moveToFirst();
+        for (int i=0;i<c01.getCount();i++){
+            //s01=s01+c01.getString(c01.getColumnIndex(colNames[0]))+"\t";
+            s01=s01+c01.getString(0)+"\t";
+            s01=s01+c01.getString(1)+"\n";
+            c01.moveToNext();
+        }
+        tv01.setText(s01.toString());
+    }
+
+    Button.OnClickListener bt0Click= new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+// TODO Auto-generated method stub
+
+            long id;
+
+            ContentValues cv01=new ContentValues();
+            cv01.put("tnote",et01.getText().toString());
+            id=db01.insert(databaseTable,null,cv01);
+
+            Toast.makeText(getApplicationContext(),"記錄新增完成:"+id,Toast.LENGTH_SHORT).show();
+        }
+    };
+
+@Override
+protected void onStop(){
+    // TODO Auto-generated method stub
+    super.onStop();
+    db01.close();
+}
 
     public void showDate() {
         tv0 = (TextView) findViewById(R.id.tv0);
